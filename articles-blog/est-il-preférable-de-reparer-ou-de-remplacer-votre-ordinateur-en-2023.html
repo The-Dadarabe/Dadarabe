@@ -1,0 +1,495 @@
+<!--
+=============================================
+======== REBOOT-IT.CLICK - Code HTML5 ========
+=============================================
+
+Ce code HTML5 constitue la structure du site Web https://reboot-it.click. Il définit les éléments sémantiques et les contenus du site.
+
+Auteur: Tahiana .J
+Date de création: 25 juillet 2023
+
+Notez que ce code utilise des balises HTML5 telles que <header>, <nav>, <section>, <article>, <footer>, etc., pour améliorer l'accessibilité et le référencement du site.
+
+Pour toute question ou commentaire, veuillez contacter l'équipe technique de REBOOT-IT.CLICK à contact@reboot-it.click
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>REBOOT-IT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/reboot-it.png" rel="rebootit-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!------------------------------------------------------- Début Messenger Plugin de discussion Code ------------------------------------------------------------------------>
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin de discussion code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "101652039674188");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v17.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!------------------------------------------------------- fin Messenger Plugin de discussion Code ------------------------------------------------------------------------>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">REBOOT-IT.</a></h1>-->
+
+      <a href="../index.html" class="logo me-auto"><img src="../assets/img/logo_transpa.png" alt=""
+          class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../index.html#hero">Accueil</a></li>
+          <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Mes axes de surveillance</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../blog-ia.html">Intelligence artificielle</a></li>
+              <li><a href="../blog-cybersecurite.html">Cybersécurité</a></li>
+              <li><a href="../blog-materiel.html">Matériel informatique</a></li>
+              <li><a href="../blog-logiciel.html">Logiciels et applications</a></li>
+              <li><a href="../blog-cloud.html">Cloud computing</a></li>
+              <li><a href="../blog-tech.html">Technologies innovantes</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../index.html#about">À propos de nous</a></li>
+          <li><a class="nav-link scrollto" href="../blog.html">Blog</a></li>
+
+          <li><a class="nav-link scrollto" href="../index.html#footer">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="twitter" target="_blank"><i
+            class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="facebook" target="_blank"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="linkedin" target="_blank"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="instagram" target="_blank"><i
+            class="bi bi-instagram"></i></a>
+      </div>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Installation et configuration de serveurs ======= -->
+    <section class="oeuvres-details" style="padding-bottom: 20px;">
+      <header class="section-header blog-header">
+        <h3>Découvrez notre Blog</h3>
+        <h5>Plongez dans l'univers de la technologie avec nos articles informatifs et informatiques.</h5>
+
+        <style>
+          @media (max-width: 767px) {
+            .section-header h3 {
+              font-size: 30px;
+
+            }
+          }
+        </style>
+      </header>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- Article 1 -->
+
+
+          <div class="col-lg-8">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="../assets/img/blog/rep.jpg" class="img-fluid" alt="">
+                <span class="post-date">5 août</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Est-il préférable de réparer ou de remplacer votre ordinateur en 2023 ? </h3>
+                <div class="meta-top">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-person"></i>
+
+                      <a href="https://reboot-it.click" target="_blank">reboot-it.click</a>
+                    </li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time
+                          datetime="2023-09-09">Jul 25, 2023</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">15
+                        Commentaires</a></li>
+                  </ul>
+                </div>
+
+                <div class="content">
+                  <h3>Les
+                    conseils de REBOOT-IT.CLICK</h3>
+                  <p>Les problèmes informatiques peuvent survenir à tout moment, et lorsque votre ordinateur commence à
+                    montrer des signes de défaillance, la tentation d'opter pour un tout nouvel appareil peut être
+                    forte. Cependant, avant de prendre une décision hâtive, il est important de considérer toutes les
+                    options. Dans cet article, nous allons explorer les facteurs clés qui vous aideront à déterminer
+                    s'il est préférable de réparer ou de remplacer votre ordinateur en 2023. <br /><br />Laissez-nous
+                    chez
+                    REBOOT-IT.CLICK vous guider vers la meilleure solution.</p>
+                  <a class="logo me-auto">
+                    <img <img src="../assets/img/logo_transpa.png" alt="" class="img-fluid"
+                      style="margin-bottom: 30px;">
+                  </a>
+
+                  <h4>L'évaluation initiale : réparation ou remplacement - Que choisir ?</h4>
+                  <p>Avant de vous lancer dans la réparation ou de penser à l'achat d'un nouvel ordinateur, il est
+                    essentiel d'évaluer la situation. Plusieurs facteurs sont à considérer :</p>
+
+                  <h5>. Le type de problème :</h5>
+                  <p>Le problème que vous rencontrez peut varier en gravité. Certains problèmes mineurs peuvent être
+                    résolus facilement, tandis que d'autres nécessitent une intervention plus complexe.</p>
+
+
+                  <h5>. L'âge de votre machine :</h5>
+                  <p>L'âge de votre ordinateur est un facteur décisif. Les ordinateurs plus anciens peuvent nécessiter
+                    davantage de réparations pour maintenir leurs performances.</p>
+
+                  <h5>. Disponibilité des pièces :</h5>
+                  <p>Pour certains modèles plus anciens ou spécifiques, la disponibilité des pièces détachées peut être
+                    un obstacle majeur.</p>
+
+                  <p>En général, il est judicieux d'explorer la possibilité de réparer votre ordinateur avant de songer
+                    à le remplacer. Les ordinateurs de bureau offrent souvent plus de flexibilité pour les mises à
+                    niveau, tandis que les ordinateurs portables, les Chromebooks et d'autres appareils spécialisés
+                    peuvent s'avérer coûteux à réparer en raison de pièces personnalisées.</p>
+
+                  <h4>Problèmes informatiques courants qui méritent une réparation :</h4>
+                  <p>Certaines pannes informatiques courantes justifient généralement une réparation, car elles peuvent
+                    être résolues avec succès. En voici quelques-unes :</p>
+                  <h5>. Ralentissement des performances :</h5>
+                  <p>Si votre ordinateur semble ralentir, plusieurs causes peuvent être à l'origine du problème. La
+                    suppression de logiciels inutiles et la libération d'espace disque peuvent déjà améliorer les
+                    choses. Si nécessaire, une mise à niveau de la RAM ou du processeur peut considérablement augmenter
+                    les performances.</p>
+                  <h5>. Surchauffe :</h5>
+                  <p>Les problèmes de surchauffe de l'ordinateur peuvent résulter de ventilateurs encrassés. Un simple
+                    nettoyage peut résoudre ce problème. Dans certains cas, le remplacement du ventilateur peut être
+                    nécessaire.</p>
+
+                  <h5>. Plantages et blocages :</h5>
+                  <p>Les plantages ou blocages fréquents peuvent résulter d'infections par des virus ou des logiciels
+                    malveillants. L'utilisation d'un logiciel antivirus fiable peut contribuer à résoudre ce problème.
+                    Si les problèmes persistent, un dysfonctionnement matériel peut être en cause.</p>
+
+                  <h5>. Problèmes de démarrage :</h5>
+                  <p>Les problèmes de démarrage peuvent être liés à un disque dur défectueux ou à un composant matériel
+                    en panne.</p>
+                  <h5>. Problèmes du système d'exploitation :</h5>
+                  <p>Les problèmes liés au système d'exploitation peuvent souvent être résolus par une réinstallation du
+                    système. Vous pouvez trouver des guides en ligne détaillés pour vous aider dans ce processus. </p>
+                  <h4>Cependant, il y a des situations où la réparation ne se justifie pas. Voici quelques
+                    exemples :</h4>
+
+                  <h5>- Écran fissuré :</h5>
+                  <p>Les coûts de réparation d'un écran fissuré peuvent être élevés. Dans de tels cas, envisager
+                    l'utilisation de votre ordinateur avec un écran externe peut être une alternative plus économique.
+                  </p>
+                  <h5>. Dégâts d'eau :</h5>
+                  <p>Les dégâts d'eau peuvent provoquer des dommages invisibles qui affectent la durabilité de votre
+                    ordinateur à long terme. Dans certains cas, il peut être plus judicieux de remplacer l'ordinateur
+                    plutôt que de tenter une réparation coûteuse.</p>
+                  <h5>. Disque dur défectueux :</h5>
+                  <p>Un disque dur défectueux peut être remplacé, mais seulement si vous avez des sauvegardes de vos
+                    données. Si ce n'est pas le cas, la récupération de données peut être coûteuse et incertaine.</p>
+                  <h5>. Carte mère défaillante :</h5>
+                  <p>Une carte mère défaillante, en particulier sur un ordinateur vieillissant, peut signaler la fin de
+                    vie de votre machine. Le coût élevé de remplacement de la carte mère peut rendre la réparation peu
+                    rentable.</p>
+                  <h4>Comment prendre la décision : réparation ou remplacement ?</h4>
+                  <p>Pour déterminer si la réparation ou le remplacement est la meilleure option, tenez compte des
+                    facteurs suivants :</p>
+                  <h5>. L'âge :</h5>
+                  <p>Les ordinateurs âgés de cinq ans ou plus peuvent nécessiter une mise à niveau ou un remplacement.
+                  </p>
+
+                  <h5>. Performances :
+                  </h5>
+                  <p>Si votre ordinateur ne répond plus à vos besoins actuels, envisagez une mise à niveau.</p>
+                  <h5>. Coût de réparation :</h5>
+                  <p>Si le coût des réparations dépasse la moitié du prix d'un nouvel ordinateur, il peut être plus
+                    judicieux d'opter pour un remplacement.</p>
+
+                  <h5>. Garantie : </h5>
+                  <p>Si votre ordinateur est encore sous garantie, envisagez de le faire réparer, car les coûts seront
+                    généralement couverts.</p>
+                  <p>N'oubliez pas que des problèmes spécifiques, tels que des dégâts d'eau ou un écran fissuré, peuvent
+                    rendre la réparation peu rentable, même pour un ordinateur relativement récent. Dans ces cas,
+                    envisager un nouvel achat peut être plus sage.</p>
+                  <h4>Avantages de la réparation par rapport à l'achat d'un nouvel ordinateur :</h4>
+                  <p><strong>1. Économies : </strong>La réparation est souvent moins coûteuse qu'un achat complet.</p>
+                  <p><strong>2. Familiarité : </strong>Vous êtes déjà familier avec votre ordinateur actuel, ce qui
+                    facilite la transition après la réparation.</p>
+                  <p><strong>3. Sauvegarde de données : </strong>Vous n'avez pas à transférer vos données vers un nouvel
+                    appareil.</p>
+
+                  <h4>Avantages de l'achat d'un nouvel ordinateur :</h4>
+                  <p><strong>1. Technologie de pointe : </strong>L'achat d'un nouvel ordinateur vous permet de
+                    bénéficier des dernières avancées technologiques, notamment des processeurs plus rapides, plus de
+                    mémoire, et de nouvelles fonctionnalités.</p>
+                  <p><strong>2. Garantie : </strong>Les nouveaux ordinateurs sont généralement accompagnés d'une
+                    garantie, ce qui offre une tranquillité d'esprit en cas de problème.</p>
+                  <p><strong>3. Propreté : </strong>Les nouveaux ordinateurs sont exempts de virus ou de logiciels
+                    malveillants, ce qui n'est pas toujours le cas avec les machines plus anciennes.</p>
+
+                  <h4>Combien coûte en moyenne une réparation informatique ?</h4>
+                  <p>Le coût d'une réparation informatique varie considérablement en fonction de la nature du problème.
+                    Les réparations mineures, comme la réparation d'un câble défectueux, peuvent coûter quelques
+                    euros, tandis que les réparations plus complexes, telles que le remplacement d'un disque dur,
+                    peuvent atteindre plusieurs centaines d'euros. Il est recommandé de consulter un technicien
+                    qualifié pour obtenir un devis précis avant de prendre une décision.</p>
+
+
+
+                  <h4>Les services de réparation informatique de REBOOT-IT.CLICK :</h4>
+                  <p>Si votre ordinateur connaît des problèmes et que vous hésitez entre la réparation et le
+                    remplacement, n'hésitez pas à contacter <a href="https://reboot-it.click"
+                      style="color: #1bb1dc;">REBOOT-IT</a>. Nous proposons une gamme de services de
+                    réparation informatique.</p>
+
+                  <p>Nos techniciens qualifiés peuvent évaluer votre ordinateur, estimer le coût des réparations, et
+                    vous conseiller sur la meilleure démarche à suivre, que ce soit la réparation ou le remplacement.
+                    Nous proposons également d'autres services divers et variés.</p>
+
+                  <p>Chez <a href="https://reboot-it.click" style="color: #1bb1dc;">REBOOT-IT</a>, nous sommes là pour
+                    vous aider à prendre la meilleure décision pour votre
+                    ordinateur et pour vous. N'hésitez pas à nous contacter pour tous vos besoins en matière de
+                    réparation informatique.</p>
+
+                  <blockquote style="font-style: italic; border-left: 2px solid #333; padding-left: 10px;">
+                    "Lorsque les coûts de réparation dépassent la moitié du prix, envisagez sérieusement le
+                    remplacement." <br /> <a href="https://reboot-it.click">REBOOT-IT.CLICK</a>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article 2 -->
+          <div class="col-lg-4">
+            <div class="post-item position-relative h-100">
+              <h3>Publication récente</h3>
+              <!-------------------------------------->
+              <div class="recent-publ">
+                <div class="miniature-image">
+                  <img src="../assets/img/blog/malware.jpg" class="img-fluid" alt="Image">
+                </div>
+                <div class="miniature-texte">
+                  <a href="../articles-blog/comment-proteger-votre-vie-privee-en-ligne.html">Comment protéger votre vie
+                    privée en ligne</a>
+                  <time datetime="2020-01-01">26 novembre, 2023</time>
+                </div>
+              </div>
+
+              <!-------------------------------------->
+              <div class="recent-publ">
+                <div class="miniature-image">
+                  <img src="../assets/img/blog/astuces.jpg" class="img-fluid" alt="Image">
+                </div>
+                <div class="miniature-texte">
+                  <a href="../articles-blog/5-astuces-pour-garder-votre-ordinateur-en-forme.html">5 astuces pour garder
+                    votre ordinateur en forme</a>
+                  <time datetime="2020-01-01">5 août, 2023</time>
+                </div>
+              </div>
+              <!-------------------------------------->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End  -->
+
+  </main><!-- End #main -->
+
+  <!-- -----------------------======= Footer ======= ------------------------->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <!-- Premier bloc de contenu -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Logo -->
+                <div class="footer-info">
+                  <a href="index.html" class="logo me-auto">
+                    <img src="../assets/img/logo_transpa.png" alt="" class="img-fluid">
+                  </a>
+                  <!-- Description de l'entreprise -->
+                  <p><br />Nous vivons dans un monde où la technologie évolue rapidement, et rester à jour est devenu
+                    essentiel, que vous soyez un professionnel ou un passionné de l’IT. Pour les entreprises, être à la
+                    pointe des dernières avancées permet de gagner en compétitivité, d'améliorer la sécurité et de
+                    maximiser l'efficacité. En tant qu'individu, suivre les évolutions technologiques vous aide à
+                    renforcer vos compétences et à rester pertinent dans un marché du travail en constante
+                    transformation. Ne pas s'adapter peut entraîner des risques, notamment des cyberattaques ou une
+                    perte d'opportunités professionnelles dans le domaine IT.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 custom-padding-left">
+                <!-- Liens utiles -->
+                <div class="footer-links">
+                  <h4>Liens utiles</h4>
+                  <a href="#hero">Accueil</a><br>
+                  <a href="#services">Mes axes de surveillance</a><br>
+                  <a href="#about">À propos de nous</a><br>
+
+                </div>
+                <!-- Coordonnées de contact -->
+                <div class="footer-links">
+                  <h4>Contactez-nous</h4>
+                  <p>
+                    Carnoux-en-Provence, 13470 <br>
+                    France <br>
+                    Téléphone: <a href="tel:+33 4 88 39 22 43">+33 (0)4 88 39 22 43</a> <br>
+                    Email: <a href="mailto:contact@reboot-it.click">contact@reboot-it.click</a> <br>
+                  </p>
+                </div>
+
+                <!-- Liens des réseaux sociaux -->
+                <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="twitter"><i
+                      class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="facebook"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="instagram"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="linkedin"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Deuxième bloc de contenu -->
+          <div class="col-lg-6">
+            <div class="form">
+              <!-- Formulaire de contact -->
+              <h4>Obtenez gratuitement des informations en ligne</h4>
+              <p>N'hésitez pas à me contacter pour toute question ou demande d'information sur les dernières tendances
+                technologiques. Je m'engage à vous répondre dans les 24 heures.</p>
+
+              <form name="contact" enctype="multipart/form-data" method="POST" data-netlify="true">
+                <p>
+                  <label>Votre nom: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Votre e-mail : <input type="email" name="email" /></label>
+                </p>
+
+                <p>
+                  <label>Objet : <input type="text" name="subject" /></label>
+                </p>
+
+                <p>
+                  <label>Message : <textarea name="message"></textarea></label>
+                </p>
+                <p style="margin-bottom: 0px;">
+                  <label>
+                    <span>Ajouter un fichier(s) :<br></span>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p style="margin-bottom: 0px;">
+                  <label>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p>
+                  <button type="submit">Envoyer</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pied de page -->
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; Copyright <strong>REBOOT-IT 2023</strong>. Tous droits réservés.
+        </div>
+        <div class="credits">
+          Conçu par <a href="https://www.linkedin.com/in/tahiana-j-20193a216/" target="_blank">Tahiana .J</a>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Fichiers JS des fournisseurs -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <!-- Fichier JS principal du modèle -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

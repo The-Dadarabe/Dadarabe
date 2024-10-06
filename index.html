@@ -1,0 +1,591 @@
+<!--
+=============================================
+======== REBOOT-IT.CLICK - Code HTML5 ========
+=============================================
+
+Ce code HTML5 constitue la structure du site Web https://reboot-it.click. Il définit les éléments sémantiques et les contenus du site.
+
+Auteur: Tahiana .J
+Date de création: 25 juillet 2023
+
+Notez que ce code utilise des balises HTML5 telles que <header>, <nav>, <section>, <article>, <footer>, etc., pour améliorer l'accessibilité et le référencement du site.
+
+Pour toute question ou commentaire, veuillez contacter l'équipe technique de REBOOT-IT.CLICK à contact@reboot-it.click
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>REBOOT-IT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/reboot-it.png" rel="rebootit-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Balise de vérification google console search -->
+
+  <meta name="google-site-verification" content="iWcheRgTEF73BCE9LCT_faceEcTq_h9ls8b50rqk8To" />
+
+</head>
+
+<body>
+  <!-- ----------------------------------------------------- Début Messenger Plugin de discussion Code ---------------------------------------------------------------------- -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin de discussion code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "101652039674188");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v17.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!--  ----------------------------------------------------- fin Messenger Plugin de discussion Code ---------------------------------------------------------------------- -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">REBOOT-IT.</a></h1>-->
+
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo_transpa.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Mes axes de surveillance</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./blog-ia.html">Intelligence artificielle</a></li>
+              <li><a href="./blog-cybersecurite.html">Cybersécurité</a></li>
+              <li><a href="./blog-materiel.html">Matériel informatique</a></li>
+              <li><a href="./blog-logiciel.html">Logiciels et applications</a></li>
+              <li><a href="./blog-cloud.html">Cloud computing</a></li>
+              <li><a href="./blog-tech.html">Technologies innovantes</a></li>
+            </ul>
+
+          </li>
+          <li><a class="nav-link scrollto" href="#about">À propos de nous</a></li>
+
+          <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="twitter" target="_blank"><i
+            class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="facebook" target="_blank"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="linkedin" target="_blank"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="instagram" target="_blank"><i
+            class="bi bi-instagram"></i></a>
+      </div>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center" data-aos="fade-up">
+
+        <div class="col-lg-6 intro-info order-lg-first order-last" data-aos="zoom-in" data-aos-delay="100">
+          <h2 style="margin-bottom: 10px;">Bienvenue chez <span>REBOOT-IT</span></h2>
+          <a>Votre source complète pour la veille technologique.</b>.</a>
+          <h5 style="margin-top: 35px; padding-right: 30px;">Nous <span id="typed"></span></h5>
+          <div>
+            <a href="#services" class="btn-get-started scrollto">Explorez les actualités</a>
+          </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          var typed = new Typed('#typed', {
+            strings: [
+              '<span style="font-weight: bold;">vous informons des évolutions en matériel informatique</span>',
+              '<span style="font-weight: bold;">vous présentons les logiciels et applications récents</span>',
+              '<span style="font-weight: bold;">vous alertons sur les menaces et pratiques en cybersécurité</span>',
+              '<span style="font-weight: bold;">vous fournissons des insights sur le cloud computing</span>',
+              '<span style="font-weight: bold;">vous signalons les technologies émergentes et leurs impacts</span>',
+              '<span style="font-weight: bold;">vous tenons au courant des avancées en veille technologique</span>',
+            ]
+
+
+
+            ,
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
+          });
+        </script>
+        <div class="col-lg-6 intro-img order-lg-last order-first" data-aos="zoom-out" data-aos-delay="200">
+          <img id="slideshow" src="assets/img/intro-img1.jpg" alt="" class="img-fluid"
+            style="transform: scale(1.2); border-radius: 4px; margin-top: 10px;">
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- Section des Services -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <!-- En-tête de la section des services -->
+        <header class="section-header">
+          <h3>Mes axes de surveillance</h3>
+          <p>Des insights complets pour toutes vos préoccupations technologiques.</p>
+        </header>
+
+        <!-- Grille de services -->
+        <div class="row gy-4">
+
+          <!-- Service : Veille en Intelligence Artificielle -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative zoom-on-hover">
+              <div class="icon_service" style="background: #eaf4f4;"><i class="bi bi-cpu" style="color: #4db8ff;"></i>
+              </div>
+              <br>
+              <h3>Intelligence Artificielle</h3>
+              <p>Restez à jour avec les dernières avancées en IA ! Nous analysons les tendances et les innovations pour
+                vous fournir des insights précieux.</p>
+              <a href="blog-ia.html" class="readmore stretched-link d-md-block">En savoir plus<i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Fin du Service -->
+
+          <!-- Service : Veille en Cybersécurité -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative zoom-on-hover">
+              <div class="icon_service" style="background: #f4eaf4;"><i class="bi bi-shield-check"
+                  style="color: #ff6f61;"></i></div>
+              <br>
+              <h3>Cybersécurité</h3>
+              <p>Nous surveillons les nouvelles menaces
+                et les meilleures pratiques pour vous offrir des conseils essentiels.</p>
+              <a href="blog-cybersecurite.html" class="readmore stretched-link d-md-block">En savoir plus<i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Fin du Service -->
+
+
+          <!-- Service : Veille en Matériel Informatique -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative zoom-on-hover">
+              <div class="icon_service" style="background: #f0f4f8;"><i class="bi bi-hdd" style="color: #007bff;"></i>
+              </div>
+              <br>
+              <h3>Matériel Informatique</h3>
+              <p>Suivez les dernières innovations en matériel informatique ! Les évolutions des composants
+                et équipements pour vous offrir des insights précieux.</p>
+
+
+              <a href="blog-materiel.html" class="readmore stretched-link d-md-block">En savoir plus<i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Fin du Service -->
+          <!-- Service : Veille en Logiciels et Applications -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative zoom-on-hover">
+              <div class="icon_service" style="background: #eaf4f4;"><i class="bi bi-app" style="color: #007bff;"></i>
+              </div>
+              <br>
+              <h3>Logiciels et Applications</h3>
+              <p>Nous suivons les dernières applications et mises à jour pour vous fournir des analyses clés et des
+                conseils pertinents.</p>
+              <a href="blog-logiciel.html" class="readmore stretched-link d-md-block">En savoir plus<i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Fin du Service -->
+
+          <!-- Service : Veille en Cloud Computing -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative zoom-on-hover">
+              <div class="icon_service" style="background: #e0f7fa;"><i class="bi bi-cloud" style="color: #00bcd4;"></i>
+              </div>
+              <br>
+              <h3>Cloud Computing</h3>
+              <p>Nous surveillons les évolutions des services cloud pour vous offrir des insights sur les dernières
+                tendances et innovations.</p>
+              <a href="blog-cloud.html" class="readmore stretched-link d-md-block">En savoir plus<i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Fin du Service -->
+
+          <!-- Service : Veille en Technologies Émergentes -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative zoom-on-hover">
+              <div class="icon_service" style="background: #f3e5f5;"><i class="bi bi-lightbulb"
+                  style="color: #d32f2f;"></i></div>
+              <br>
+              <h3>Technologies Innovantes</h3>
+              <p>Nous explorons les technologies de demain pour vous fournir des informations sur les innovations et
+                tendances qui façonnent l'avenir.</p>
+              <a href="blog-tech.html" class="readmore stretched-link d-md-block">En savoir plus<i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- Fin du Service -->
+
+        </div>
+
+      </div>
+    </section>
+    <!-- Fin de la Section des Services -->
+
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img" data-aos="fade-right" data-aos-delay="100">
+              <img src="assets/img/about-img.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+              <h2>REBOOT-IT</h2>
+              <h3>Votre site dédié à la veille technologique !</h3>
+
+              <p>Bienvenue sur <strong>REBOOT-IT</strong>, votre source de veille technologique ! Ici, nous vous offrons
+                un accès privilégié aux dernières tendances technologiques, que ce soit en intelligence artificielle,
+                cybersécurité ou matériel informatique. <strong>REBOOT-IT</strong> est conçu pour vous fournir des
+                informations à jour et pertinentes, afin que vous puissiez suivre l’évolution rapide du secteur
+                technologique. Nous nous adressons aussi bien aux professionnels qu'aux passionnés, désireux de rester
+                informés.</p>
+
+              <p>Notre équipe d'experts passionnés se consacre à l’analyse des innovations pour vous proposer des
+                contenus clairs et accessibles. Sur <strong>REBOOT-IT</strong>, nous simplifions les concepts complexes
+                pour vous aider à comprendre les enjeux des nouvelles technologies et à en tirer profit. Nos articles
+                sont conçus pour vous permettre de prendre des décisions éclairées et d’intégrer les technologies dans
+                vos projets.</p>
+
+              <p>Nous voulons faire de <strong>REBOOT-IT</strong> votre partenaire privilégié dans la veille
+                technologique. Grâce à notre veille continue et à nos analyses d'experts, vous bénéficiez d'un aperçu
+                complet et à jour du paysage technologique. Explorez nos contenus et restez en avance sur les dernières
+                innovations !</p>
+
+              <ul>
+                <li><strong>Avantages de REBOOT-IT :</strong></li>
+                <li><i class="bi bi-check-circle"></i> Veille technologique en temps réel.</li>
+                <li><i class="bi bi-check-circle"></i> Analyses approfondies et accessibles.</li>
+                <li><i class="bi bi-check-circle"></i> Articles sur les dernières tendances.</li>
+                <li><i class="bi bi-check-circle"></i> Informations pratiques et facilement exploitables.</li>
+                <li><i class="bi bi-check-circle"></i> Outil pour prendre des décisions technologiques éclairées.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+        <div class="row">
+          <div class="col-lg-12 text-left">
+            <h2 class="cta-title"><i class="bi bi-info-circle"></i> Le saviez-vous</h2>
+            <div class="cta-text-carousel" id="carousel">
+              <p class="cta-text active">La durée de vie moyenne d'un disque dur est d'environ 3 à 5 ans, mais une
+                maintenance régulière peut prolonger sa vie utile.</p>
+              <p class="cta-text">Saviez-vous que le premier ordinateur électronique programmable a été créé en 1943 et
+                s'appelait l'ENIAC ?</p>
+              <p class="cta-text">Les premiers disques durs informatiques étaient de la taille d'une armoire et
+                pouvaient stocker seulement quelques mégaoctets de données.</p>
+              <p class="cta-text">Le mot "bug" pour décrire un problème informatique a été popularisé par Grace Hopper
+                lorsqu'un insecte s'est coincé dans un relais de l'ordinateur en 1947.</p>
+              <p class="cta-text">Le navigateur web le plus utilisé au monde est Google Chrome, suivi de près par
+                Mozilla Firefox.</p>
+              <p class="cta-text">Les ordinateurs quantiques utilisent des qubits pour effectuer des calculs, ce qui
+                leur permet de résoudre certains problèmes beaucoup plus rapidement que les ordinateurs classiques.</p>
+              <p class="cta-text">Le terme "cloud computing" fait référence au stockage et à l'accès aux données et aux
+                programmes sur Internet plutôt que sur un disque dur local.</p>
+              <p class="cta-text">Les premiers téléphones portables étaient si gros qu'ils devaient être transportés
+                dans des sacs à dos.</p>
+              <p class="cta-text">Le premier SMS a été envoyé en 1992 par un ingénieur britannique qui a écrit les mots
+                "Merry Christmas" sur son téléphone.</p>
+              <p class="cta-text">L'intelligence artificielle est utilisée dans de nombreux domaines, y compris la
+                reconnaissance vocale, la traduction automatique, la recommandation de produits et la conduite autonome.
+              </p>
+              <p class="cta-text">Le terme "virus informatique" a été inventé par Frederick Cohen en 1983 pour décrire
+                un programme capable de se reproduire et de se propager à d'autres ordinateurs.</p>
+              <p class="cta-text">Le premier ordinateur portable a été inventé en 1981 par Adam Osborne et s'appelait
+                l'Osborne 1.</p>
+              <p class="cta-text">Le langage de programmation le plus populaire au monde est JavaScript, suivi de près
+                par Python et Java.</p>
+              <p class="cta-text">Le premier site web a été mis en ligne en 1991 par Tim Berners-Lee.</p>
+              <p class="cta-text">Le code source du premier navigateur web a été écrit en moins de 6 mois en 1990.</p>
+              <p class="cta-text">Les smartphones modernes ont plus de puissance de calcul que les ordinateurs qui ont
+                permis à l'homme de marcher sur la lune.</p>
+              <p class="cta-text">Le système d'exploitation Android est basé sur le noyau Linux.</p>
+              <p class="cta-text">Le premier emoji a été créé au Japon en 1999.</p>
+              <p class="cta-text">Le terme "cyberspace" a été inventé par l'auteur William Gibson en 1982 dans son livre
+                Neuromancer.</p>
+              <p class="cta-text">Le premier message envoyé sur Internet a été "LO" (pour "LOGIN"), mais le système a
+                planté avant que le mot "LOGIN" ne soit complètement saisi.</p>
+              <p class="cta-text">Le premier ordinateur Apple a été construit dans un garage par Steve Jobs et Steve
+                Wozniak.</p>
+              <p class="cta-text">Le terme "hackers" a été utilisé pour la première fois dans les années 1960 pour
+                désigner les programmeurs talentueux.</p>
+              <p class="cta-text">Le premier ordinateur électronique à lampes à vide s'appelait l'EDVAC et a été
+                construit en 1949.</p>
+              <p class="cta-text">Le World Wide Web a été inventé en 1989 par Tim Berners-Lee.</p>
+              <p class="cta-text">Le premier ordinateur de bureau commercialisé par IBM était le modèle 5150 et a été
+                lancé en 1981.</p>
+              <p class="cta-text">Le premier smartphone est apparu en 1992 et s'appelait le Simon Personal Communicator.
+              </p>
+              <p class="cta-text">Le mot "algorithm" tire son nom du mathématicien perse Al-Khwarizmi, qui a vécu au IXe
+                siècle.</p>
+              <p class="cta-text">Le premier ordinateur programmable a été inventé par Charles Babbage au XIXe siècle et
+                s'appelait la "Machine Analytique".</p>
+              <p class="cta-text">Le mot "robot" tire son origine du mot tchèque "robota", qui signifie "travail forcé".
+              </p>
+              <p class="cta-text">Le premier virus informatique pour Macintosh a été créé en 1982 et s'appelait "Elk
+                Cloner".</p>
+              <p class="cta-text">Le premier ordinateur Apple a été vendu au prix de 666,66 dollars.</p>
+              <p class="cta-text">Le terme "Bluetooth" tire son nom du roi danois Harald "Bluetooth" Gormsson.</p>
+              <p class="cta-text">Le premier téléphone portable avec appareil photo intégré a été lancé en 2000.</p>
+              <p class="cta-text">Le premier navigateur web graphique a été développé par le CERN en 1993.</p>
+              <p class="cta-text">Le premier réseau social en ligne, SixDegrees, a été lancé en 1997.</p>
+              <p class="cta-text">Le premier ordinateur avec une interface graphique a été le Xerox Alto, créé en 1973.
+              </p>
+              <p class="cta-text">Le terme "firewall" tire son nom des murs coupe-feu utilisés dans les bâtiments pour
+                empêcher la propagation du feu.</p>
+              <p class="cta-text">Le premier appareil GPS commercialisé pour le grand public est apparu en 1999.</p>
+              <p class="cta-text">Le premier ordinateur portable avec écran couleur a été lancé en 1993.</p>
+              <p class="cta-text">Le premier smartphone avec écran tactile a été lancé en 2007 par Apple et s'appelait
+                l'iPhone.</p>
+              <p class="cta-text">Le premier moteur de recherche sur Internet a été développé en 1990 par Alan Emtage.
+              </p>
+              <p class="cta-text">Le premier ordinateur avec souris a été le Xerox Star, créé en 1981.</p>
+              <p class="cta-text">Le premier emoji à avoir été utilisé sur Twitter était le symbole "cœur" en 2010.</p>
+              <p class="cta-text">Le premier ordinateur IBM a été lancé en 1952 et s'appelait le modèle 701.</p>
+              <p class="cta-text">Le premier ordinateur portable à écran plat a été lancé en 1985.</p>
+              <p class="cta-text">Le premier SMS a été envoyé en 1992 par un ingénieur britannique qui a écrit les mots
+                "Merry Christmas" sur son téléphone.</p>
+              <p class="cta-text">Le terme "cloud computing" fait référence au stockage et à l'accès aux données et aux
+                programmes sur Internet plutôt que sur un disque dur local.</p>
+              <p class="cta-text">Les premiers téléphones portables étaient si gros qu'ils devaient être transportés
+                dans des sacs à dos.</p>
+              <p class="cta-text">L'intelligence artificielle est utilisée dans de nombreux domaines, y compris la
+                reconnaissance vocale, la traduction automatique, la recommandation de produits et la conduite autonome.
+              </p>
+              <p class="cta-text">Le terme "virus informatique" a été inventé par Frederick Cohen en 1983 pour décrire
+                un programme capable de se reproduire et de se propager à d'autres ordinateurs.</p>
+            </div>
+            <div class="controls text-center"> <!-- Centrer les contrôles -->
+              <button onclick="prevSlide()" class="control-btn"><i class="bi bi-caret-left-fill"></i></button>
+              <button onclick="nextSlide()" class="control-btn"><i class="bi bi-caret-right-fill"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+
+
+
+
+  <!-- --------------- Carte Google Maps intégrée sur la ville de Carnoux-en-provence----------------- -->
+  <div>
+    <iframe
+      style="box-sizing: border-box; display: block; float: none; height: 300px; position: static; z-index: auto; width: 100%;"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1282.015949407835!2d5.559636659565996!3d43.25600947413912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9a4b4cd8ecdff%3A0x1e478bd7761a8158!2sRue%20des%20Gen%C3%AAts%2C%2013470%20Carnoux-en-Provence!5e1!3m2!1sfr!2sfr!4v1689582291771!5m2!1sfr!2sfr"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <!-----------------------======= Footer ======= ------------------------->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <!-- Premier bloc de contenu -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Logo -->
+                <div class="footer-info">
+                  <a href="index.html" class="logo me-auto">
+                    <img src="assets/img/logo_transpa.png" alt="" class="img-fluid">
+                  </a>
+                  <!-- Description de l'entreprise -->
+                  <p><br />Nous vivons dans un monde où la technologie évolue rapidement, et rester à jour est devenu
+                    essentiel, que vous soyez un professionnel ou un passionné de l’IT. Pour les entreprises, être à la
+                    pointe des dernières avancées permet de gagner en compétitivité, d'améliorer la sécurité et de
+                    maximiser l'efficacité. En tant qu'individu, suivre les évolutions technologiques vous aide à
+                    renforcer vos compétences et à rester pertinent dans un marché du travail en constante
+                    transformation. Ne pas s'adapter peut entraîner des risques, notamment des cyberattaques ou une
+                    perte d'opportunités professionnelles dans le domaine IT.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 custom-padding-left">
+                <!-- Liens utiles -->
+                <div class="footer-links">
+                  <h4>Liens utiles</h4>
+                  <a href="#hero">Accueil</a><br>
+                  <a href="#services">Mes axes de surveillance</a><br>
+                  <a href="#about">À propos de nous</a><br>
+
+                </div>
+                <!-- Coordonnées de contact -->
+                <div class="footer-links">
+                  <h4>Contactez-nous</h4>
+                  <p>
+                    Carnoux-en-Provence, 13470 <br>
+                    France <br>
+                    Téléphone: <a href="tel:+33 4 88 39 22 43">+33 (0)4 88 39 22 43</a> <br>
+                    Email: <a href="mailto:contact@reboot-it.click">contact@reboot-it.click</a> <br>
+                  </p>
+                </div>
+
+                <!-- Liens des réseaux sociaux -->
+                <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="twitter"><i
+                      class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="facebook"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="instagram"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="linkedin"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Deuxième bloc de contenu -->
+          <div class="col-lg-6">
+            <div class="form">
+              <!-- Formulaire de contact -->
+              <h4>Obtenez gratuitement des informations en ligne</h4>
+              <p>N'hésitez pas à me contacter pour toute question ou demande d'information sur les dernières tendances
+                technologiques. Je m'engage à vous répondre dans les 24 heures.</p>
+
+              <form name="contact" enctype="multipart/form-data" method="POST" data-netlify="true">
+                <p>
+                  <label>Votre nom: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Votre e-mail : <input type="email" name="email" /></label>
+                </p>
+
+                <p>
+                  <label>Objet : <input type="text" name="subject" /></label>
+                </p>
+
+                <p>
+                  <label>Message : <textarea name="message"></textarea></label>
+                </p>
+                <p style="margin-bottom: 0px;">
+                  <label>
+                    <span>Ajouter un fichier(s) :<br></span>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p style="margin-bottom: 0px;">
+                  <label>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p>
+                  <button type="submit">Envoyer</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pied de page -->
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; Copyright <strong>REBOOT-IT 2023</strong>. Tous droits réservés.
+        </div>
+        <div class="credits">
+          Conçu par <a href="https://www.linkedin.com/in/tahiana-j-20193a216/" target="_blank">Tahiana .J</a>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Fichiers JS des fournisseurs -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Fichier JS principal du modèle -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

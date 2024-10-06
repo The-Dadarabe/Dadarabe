@@ -1,0 +1,491 @@
+<!--
+=============================================
+======== REBOOT-IT.CLICK - Code HTML5 ========
+=============================================
+
+Ce code HTML5 constitue la structure du site Web https://reboot-it.click. Il définit les éléments sémantiques et les contenus du site.
+
+Auteur: Tahiana .J
+Date de création: 25 juillet 2023
+
+Notez que ce code utilise des balises HTML5 telles que <header>, <nav>, <section>, <article>, <footer>, etc., pour améliorer l'accessibilité et le référencement du site.
+
+Pour toute question ou commentaire, veuillez contacter l'équipe technique de REBOOT-IT.CLICK à contact@reboot-it.click
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>REBOOT-IT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/reboot-it.png" rel="rebootit-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!------------------------------------------------------- Début Messenger Plugin de discussion Code ------------------------------------------------------------------------>
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin de discussion code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "101652039674188");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v17.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!------------------------------------------------------- fin Messenger Plugin de discussion Code ------------------------------------------------------------------------>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">REBOOT-IT.</a></h1>-->
+
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo_transpa.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html#hero">Accueil</a></li>
+          <li class="dropdown"><a class="nav-link scrollto" href="index.html#services"><span>Mes axes de
+                surveillance</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./blog-ia.html">Intelligence artificielle</a></li>
+              <li><a href="./blog-cybersecurite.html">Cybersécurité</a></li>
+              <li><a href="./blog-materiel.html">Matériel informatique</a></li>
+              <li><a href="./blog-logiciel.html">Logiciels et applications</a></li>
+              <li><a href="./blog-cloud.html">Cloud computing</a></li>
+              <li><a href="./blog-tech.html">Technologies innovantes</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#about">À propos de nous</a></li>
+
+
+          <li><a class="nav-link scrollto" href="index.html#footer">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="twitter" target="_blank"><i
+            class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="facebook" target="_blank"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="linkedin" target="_blank"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="instagram" target="_blank"><i
+            class="bi bi-instagram"></i></a>
+      </div>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Installation et configuration de serveurs ======= -->
+    <section class="oeuvres-details" style="padding-bottom: 20px;">
+      <header class="section-header blog-header">
+        <h3>Logiciels et Applications</h3>
+        <h6>Restez informé des nouvelles applications et mises à jour logicielles grâce à nos analyses.</h6>
+
+        <style>
+          @media (max-width: 767px) {
+            .section-header h3 {
+              font-size: 30px;
+
+            }
+          }
+        </style>
+      </header>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- Article 1 -->
+          <div class="col-lg-4">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/astuces.jpg" class="img-fluid" alt="">
+                <span class="post-date">04 août</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">5 astuces pour garder votre ordinateur en bonne santé.</h3>
+                <div class="meta d-flex align-items-center" style="margin-bottom: 20px;">
+                  <div class="d-flex align-items-center">
+
+
+                    <i class="bi bi-arrow-clockwise"></i> <span class="ps-2">reboot-it.click</span>
+
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-lightbulb"></i> <span class="ps-2">Conseil</span>
+                  </div>
+                </div>
+                <p>
+                  Découvrez quelques astuces simples pour maintenir la performance de votre ordinateur et éviter les
+                  problèmes courants.
+                </p>
+                <hr>
+                <a href="articles-blog/5-astuces-pour-garder-votre-ordinateur-en-forme.html"
+                  class="readmore stretched-link"><span>Lire la suite</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="col-lg-4">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/rep.jpg" class="img-fluid" alt="">
+                <span class="post-date">29 juillet</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Faut-il réparer ou changer d'ordinateur en 2023 ? </h3>
+                <div class="meta d-flex align-items-center" style="margin-bottom: 20px;">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-arrow-clockwise"></i> <span class="ps-2">reboot-it.click</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-book"></i> <span class="ps-2">Guide</span>
+                  </div>
+                </div>
+                <p>
+                  Consultez le guide de référence de REBOOT-IT.CLICK pour éclairer vos choix face aux problèmes
+                  informatiques.
+                </p>
+                <hr>
+                <a href="articles-blog/est-il-preférable-de-reparer-ou-de-remplacer-votre-ordinateur-en-2023.html"
+                  class="readmore stretched-link"><span>Lire la suite</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="col-lg-4">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="assets/img/blog/malware.jpg" class="img-fluid" alt="">
+                <span class="post-date">26 novembre</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Comment protéger votre vie privée en ligne</h3>
+                <div class="meta d-flex align-items-center" style="margin-bottom: 20px;">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-arrow-clockwise"></i> <span class="ps-2">reboot-it.click</span>
+                  </div>
+                  <span class="px-3 text-black-50">/</span>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-shield-lock"></i> <span class="ps-2">Vie privée</span>
+                  </div>
+                </div>
+                <p>
+                  Découvrez les meilleures pratiques pour protéger votre vie privée en ligne. Des conseils, des outils
+                  et des
+                  stratégies pour naviguer sur Internet en toute sécurité.
+                </p>
+                <hr>
+                <a href="articles-blog/comment-proteger-votre-vie-privee-en-ligne.html"
+                  class="readmore stretched-link"><span>Lire la suite</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End  -->
+
+  </main><!-- End #main -->
+  <!-- ======= Clients Section  -->
+  <section id="clients" class="clients">
+    <div class="container" data-aos="zoom-in">
+
+      <header class="section-header">
+        <h3>Un peu d'histoire !</h3>
+      </header>
+
+      <div class="clients-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Clavier_(informatique)" target="_blank">
+              <img src="assets/img/composants/clavier.png" class="img-fluid" alt="Clavier">
+              <p class="composant-name">CLAVIER</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Disque_dur" target="_blank">
+              <img src="assets/img/composants/hdd.png" class="img-fluid" alt="Disque Dur">
+              <p class="composant-name">DISQUE DUR HDD</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Carte_m%C3%A8re" target="_blank">
+              <img src="assets/img/composants/carte_mere.png" class="img-fluid" alt="Carte Mère">
+              <p class="composant-name">CARTE MÈRE</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/C%C3%A2ble_informatique" target="_blank">
+              <img src="assets/img/composants/cables.png" class="img-fluid" alt="Câbles">
+              <p class="composant-name">CÂBLES</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Carte_graphique" target="_blank">
+              <img src="assets/img/composants/carte_graphique.png" class="img-fluid" alt="Carte Graphique">
+              <p class="composant-name">CARTE GRAPHIQUE</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/M%C3%A9moire_vive" target="_blank">
+              <img src="assets/img/composants/ram.png" class="img-fluid" alt="RAM">
+              <p class="composant-name">RAM</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Disque_dur_solid-state_drive" target="_blank">
+              <img src="assets/img/composants/disque_ssd.png" class="img-fluid" alt="Disque SSD">
+              <p class="composant-name">DISQUE SSD</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Microprocesseur" target="_blank">
+              <img src="assets/img/composants/processeur.png" class="img-fluid" alt="Processeur">
+              <p class="composant-name">PROCESSEUR</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Ventilateur_de_refroidissement" target="_blank">
+              <img src="assets/img/composants/ventilo.png" class="img-fluid" alt="Ventilateur">
+              <p class="composant-name">VENTILATEUR</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/C%C3%A2ble_r%C3%A9seau" target="_blank">
+              <img src="assets/img/composants/cables_reseau.png" class="img-fluid" alt="Câbles réseau">
+              <p class="composant-name">CÂBLE ETHERNET</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/M%C3%A9moire_morte" target="_blank">
+              <img src="assets/img/composants/rom.png" class="img-fluid" alt="ROM">
+              <p class="composant-name">ROM</p>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Carte_r%C3%A9seau" target="_blank">
+              <img src="assets/img/composants/carte_reseau.png" class="img-fluid" alt="Carte Réseau">
+              <p class="composant-name">CARTE RÉSEAU</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/%C3%89cran_d%27ordinateur" target="_blank">
+              <img src="assets/img/composants/moniteur.png" class="img-fluid" alt="Moniteur">
+              <p class="composant-name">MONITEUR</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Webcam" target="_blank">
+              <img src="assets/img/composants/webcam.png" class="img-fluid" alt="Webcam">
+              <p class="composant-name">WEBCAM</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://fr.wikipedia.org/wiki/Souris_(informatique)" target="_blank">
+              <img src="assets/img/composants/souris.png" class="img-fluid" alt="Souris">
+              <p class="composant-name">SOURIS</p>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ======= End Clients Section -->
+  <!-- -----------------------======= Footer ======= ------------------------->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <!-- Premier bloc de contenu -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Logo -->
+                <div class="footer-info">
+                  <a href="index.html" class="logo me-auto">
+                    <img src="assets/img/logo_transpa.png" alt="" class="img-fluid">
+                  </a>
+                  <!-- Description de l'entreprise -->
+                  <p><br />Nous vivons dans un monde où la technologie évolue rapidement, et rester à jour est devenu
+                    essentiel, que vous soyez un professionnel ou un passionné de l’IT. Pour les entreprises, être à la
+                    pointe des dernières avancées permet de gagner en compétitivité, d'améliorer la sécurité et de
+                    maximiser l'efficacité. En tant qu'individu, suivre les évolutions technologiques vous aide à
+                    renforcer vos compétences et à rester pertinent dans un marché du travail en constante
+                    transformation. Ne pas s'adapter peut entraîner des risques, notamment des cyberattaques ou une
+                    perte d'opportunités professionnelles dans le domaine IT.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 custom-padding-left">
+                <!-- Liens utiles -->
+                <div class="footer-links">
+                  <h4>Liens utiles</h4>
+                  <a href="#hero">Accueil</a><br>
+                  <a href="#services">Mes axes de surveillance</a><br>
+                  <a href="#about">À propos de nous</a><br>
+
+                </div>
+                <!-- Coordonnées de contact -->
+                <div class="footer-links">
+                  <h4>Contactez-nous</h4>
+                  <p>
+                    Carnoux-en-Provence, 13470 <br>
+                    France <br>
+                    Téléphone: <a href="tel:+33 4 88 39 22 43">+33 (0)4 88 39 22 43</a> <br>
+                    Email: <a href="mailto:contact@reboot-it.click">contact@reboot-it.click</a> <br>
+                  </p>
+                </div>
+
+                <!-- Liens des réseaux sociaux -->
+                <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="twitter"><i
+                      class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="facebook"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="instagram"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="linkedin"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Deuxième bloc de contenu -->
+          <div class="col-lg-6">
+            <div class="form">
+              <!-- Formulaire de contact -->
+              <h4>Obtenez gratuitement des informations en ligne</h4>
+              <p>N'hésitez pas à me contacter pour toute question ou demande d'information sur les dernières tendances
+                technologiques. Je m'engage à vous répondre dans les 24 heures.</p>
+
+              <form name="contact" enctype="multipart/form-data" method="POST" data-netlify="true">
+                <p>
+                  <label>Votre nom: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Votre e-mail : <input type="email" name="email" /></label>
+                </p>
+
+                <p>
+                  <label>Objet : <input type="text" name="subject" /></label>
+                </p>
+
+                <p>
+                  <label>Message : <textarea name="message"></textarea></label>
+                </p>
+                <p style="margin-bottom: 0px;">
+                  <label>
+                    <span>Ajouter un fichier(s) :<br></span>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p style="margin-bottom: 0px;">
+                  <label>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p>
+                  <button type="submit">Envoyer</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pied de page -->
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; Copyright <strong>REBOOT-IT 2023</strong>. Tous droits réservés.
+        </div>
+        <div class="credits">
+          Conçu par <a href="https://www.linkedin.com/in/tahiana-j-20193a216/" target="_blank">Tahiana .J</a>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Fichiers JS des fournisseurs -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- Fichier JS principal du modèle -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+<!--
+=============================================
+======== REBOOT-IT.CLICK - Code HTML5 ========
+=============================================
+
+Ce code HTML5 constitue la structure du site Web https://reboot-it.click. Il définit les éléments sémantiques et les contenus du site.
+
+Auteur: Tahiana .J
+Date de création: 25 juillet 2023
+
+Notez que ce code utilise des balises HTML5 telles que <header>, <nav>, <section>, <article>, <footer>, etc., pour améliorer l'accessibilité et le référencement du site.
+
+Pour toute question ou commentaire, veuillez contacter l'équipe technique de REBOOT-IT.CLICK à contact@reboot-it.click
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>REBOOT-IT</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+  <link href="../assets/img/favicon.png" rel="icon">
+  <link href="../assets/img/reboot-it.png" rel="rebootit-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!------------------------------------------------------- Début Messenger Plugin de discussion Code ------------------------------------------------------------------------>
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin de discussion code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "101652039674188");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v17.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/fr_FR/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!------------------------------------------------------- fin Messenger Plugin de discussion Code ------------------------------------------------------------------------>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo me-auto"><a href="index.html">REBOOT-IT.</a></h1>-->
+
+      <a href="../index.html" class="logo me-auto"><img src="../assets/img/logo_transpa.png" alt=""
+          class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="../index.html#hero">Accueil</a></li>
+          <li class="dropdown"><a class="nav-link scrollto" href="#services"><span>Mes axes de surveillance</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../blog-ia.html">Intelligence artificielle</a></li>
+              <li><a href="../blog-cybersecurite.html">Cybersécurité</a></li>
+              <li><a href="../blog-materiel.html">Matériel informatique</a></li>
+              <li><a href="../blog-logiciel.html">Logiciels et applications</a></li>
+              <li><a href="../blog-cloud.html">Cloud computing</a></li>
+              <li><a href="../blog-tech.html">Technologies innovantes</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../index.html#about">À propos de nous</a></li>
+          <li><a class="nav-link scrollto" href="../blog.html">Blog</a></li>
+
+          <li><a class="nav-link scrollto" href="../index.html#footer">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="twitter" target="_blank"><i
+            class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="facebook" target="_blank"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="linkedin" target="_blank"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094897532896" class="instagram" target="_blank"><i
+            class="bi bi-instagram"></i></a>
+      </div>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Installation et configuration de serveurs ======= -->
+    <section class="oeuvres-details" style="padding-bottom: 20px;">
+      <header class="section-header blog-header">
+        <h3>Découvrez notre Blog</h3>
+        <h6>Plongez dans l'univers de la technologie avec nos articles informatifs et informatiques.</h6>
+
+        <style>
+          @media (max-width: 767px) {
+            .section-header h3 {
+              font-size: 30px;
+
+            }
+          }
+        </style>
+      </header>
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- Article 1 -->
+          <div class="col-lg-8">
+            <div class="post-item position-relative h-100">
+              <div class="post-img position-relative overflow-hidden">
+                <img src="../assets/img/blog/malware.jpg" class="img-fluid" alt="">
+                <span class="post-date">26 novembre</span>
+              </div>
+              <div class="post-content d-flex flex-column">
+                <h3 class="post-title">Comment protéger votre vie privée en ligne</h3>
+                <div class="meta-top">
+                  <ul>
+                    <li class="d-flex align-items-center"><i class="bi bi-arrow-counterclockwise"></i> <a
+                        href="https://reboot-it.click" target="_blank">reboot-it.click</a>
+                    </li>
+                    <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time
+                          datetime="2023-09-09">Nov 26, 2023</time></a></li>
+                    <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="#">2
+                        Commentaires</a></li>
+                  </ul>
+                </div>
+
+                <div class="content">
+                  <p>Dans le monde numérique actuel, il est plus important que jamais de protéger votre vie privée en
+                    ligne. Chaque clic et partage d'informations peuvent avoir des implications profondes sur votre
+                    sécurité personnelle. Il est impératif de prendre des mesures proactives pour sécuriser vos données
+                    et préserver votre intimité numérique.</p>
+
+                  <h4>1 - Conséquences des données personnelles exposées</h4>
+                  <p>La divulgation de vos données personnelles en ligne peut entraîner des conséquences dévastatrices,
+                    du vol d'identité aux attaques ciblées, compromettant ainsi votre situation financière et votre
+                    réputation.</p>
+                  <ul>
+
+                    <li> <strong>Vol d'identité :</strong> Un voleur d'identité peut utiliser vos informations
+                      personnelles pour ouvrir
+                      des comptes en votre nom, demander des prêts ou des cartes de crédit, ou même commettre des crimes
+                      en votre nom.</li>
+                    <li> <strong>Escroqueries : </strong>Les escrocs peuvent utiliser vos informations personnelles pour
+                      vous envoyer des
+                      e-mails ou des appels téléphoniques frauduleux, dans le but de vous voler votre argent ou vos
+                      informations confidentielles.</li>
+                    <li> <strong>Harcèlement :</strong> Une personne malveillante peut utiliser vos informations
+                      personnelles pour vous
+                      harceler, vous menacer ou vous intimider.</li>
+                  </ul>
+                  <h4>2 - Les bonnes pratiques</h4>
+
+                  <h5>Soyez conscient de vos données</h5>
+
+                  <p>La première étape pour protéger votre vie privée en ligne est de comprendre quelles informations
+                    vous partagez en ligne. Lorsque vous utilisez un site Web ou une application, prenez le temps de
+                    lire la politique de confidentialité de l'entreprise. Cette politique vous indiquera quelles données
+                    l'entreprise collecte, comment elle les utilise et à qui elle les partage.</p>
+
+                  <h5>Réduisez la quantité de données que vous partagez</h5>
+
+                  <p>Une fois que vous savez quelles données vous partagez, vous pouvez commencer à réduire la quantité
+                    de données que vous partagez. Voici quelques exemples :</p>
+
+                  <ul>
+                    <li>Désactivez la géolocalisation de votre appareil mobile.</li>
+                    <li>Ne partagez pas votre adresse e-mail ou votre numéro de téléphone sur les réseaux sociaux.
+                    </li>
+                    <li>Utilisez des pseudonymes lorsque cela est possible.</li>
+                  </ul>
+                  <h5>Utilisez un VPN</h5>
+
+                  <p>Un VPN, ou réseau privé virtuel, crypte votre trafic Internet et le dirige vers un serveur distant.
+                    Cela permet de cacher votre adresse IP et votre emplacement réel, ce qui peut vous aider à protéger
+                    votre vie privée.</p>
+
+                  <h5>Configurez un pare-feu</h5>
+
+                  <p>Un pare-feu est un logiciel qui bloque les connexions non autorisées. Il peut vous aider à protéger
+                    votre ordinateur contre les logiciels malveillants et les autres attaques en ligne.</p>
+
+                  <h5>Installez un logiciel antivirus</h5>
+
+                  <p>Le logiciel antivirus est essentiel pour protéger votre ordinateur contre les logiciels
+                    malveillants, tels que les virus, les logiciels espions et les chevaux de Troie. Un logiciel
+                    antivirus de bonne qualité vous aidera à détecter et à supprimer les logiciels malveillants avant
+                    qu'ils ne puissent causer des dommages.</p>
+
+                  <h5>Soyez prudent avec vos mots de passe</h5>
+
+                  <p>Les mots de passe sont la première ligne de défense de votre vie privée en ligne. Utilisez des mots
+                    de passe forts et uniques pour tous vos comptes en ligne. N'utilisez pas le même mot de passe pour
+                    plusieurs comptes, et ne partagez jamais vos mots de passe avec qui que ce soit.</p>
+
+                  <h5>Faites attention à ce que vous publiez en ligne</h5>
+
+                  <p>Ce que vous publiez en ligne peut être vu par quiconque a accès à Internet. Soyez prudent avec les
+                    informations personnelles que vous partagez en ligne. N'oubliez pas que tout ce que vous publiez en
+                    ligne peut rester en ligne pour toujours.</p>
+
+
+                  <blockquote style="font-style: italic; border-left: 2px solid #333; padding-left: 10px;">
+                    "Protéger sa vie privée en ligne, c'est préserver l'intégrité numérique de notre identité : une
+                    responsabilité essentielle dans l'ère connectée." <br /> <a
+                      href="https://reboot-it.click">REBOOT-IT.CLICK</a>
+                    </li>
+                  </blockquote>
+
+                  <h4>Conclusion :</h4>
+
+                  <p>En suivant attentivement ces conseils, vous avez désormais les outils nécessaires pour renforcer la
+                    protection de votre vie privée en ligne. Chaque mesure adoptée, qu'il s'agisse de la
+                    conscientisation de vos données, de la réduction de leur partage, de l'utilisation d'un VPN, de la
+                    configuration d'un pare-feu, de l'installation d'un logiciel antivirus, ou de la gestion prudente de
+                    vos mots de passe, contribue de manière significative à l'édification d'une barrière robuste contre
+                    les menaces en ligne.</p>
+                  <p>N'oubliez pas que la sécurité numérique est une responsabilité individuelle et collective. En
+                    prenant des décisions éclairées et en intégrant ces bonnes pratiques dans votre routine en ligne,
+                    vous pouvez jouir d'une tranquillité d'esprit accrue.</p>
+                  <p><strong>En tant que spécialiste de la sécurité informatique, je sais à quel point il est important
+                      de protéger vos données personnelles. Je vous encourage à mettre en œuvre ces conseils dès
+                      aujourd'hui pour renforcer votre sécurité en ligne.</strong></p>
+                  <p><strong>Pour plus d'informations et de conseils, n'hésitez pas à visiter notre site web, <a
+                        href="https://reboot-it.click" style="color: #1bb1dc;">REBOOT-IT</a> .
+                      Nous sommes déterminés à vous aider à protéger vos données et à naviguer en toute sécurité dans le
+                      monde numérique.</strong></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article 2 -->
+          <div class="col-lg-4">
+            <div class="post-item position-relative h-100">
+              <h3>Publication récente</h3>
+              <!-------------------------------------->
+              <div class="recent-publ">
+                <div class="miniature-image">
+                  <img src="../assets/img/blog/malware.jpg" class="img-fluid" alt="Image">
+                </div>
+                <div class="miniature-texte">
+                  <a href="../articles-blog/comment-proteger-votre-vie-privee-en-ligne.html">Comment protéger votre vie
+                    privée en ligne</a>
+                  <time datetime="2020-01-01">26 novembre, 2023</time>
+                </div>
+              </div>
+
+              <!-------------------------------------->
+              <div class="recent-publ">
+                <div class="miniature-image">
+                  <img src="../assets/img/blog/astuces.jpg" class="img-fluid" alt="Image">
+                </div>
+                <div class="miniature-texte">
+                  <a href="../articles-blog/5-astuces-pour-garder-votre-ordinateur-en-forme.html">5 astuces pour garder
+                    votre ordinateur en forme</a>
+                  <time datetime="2020-01-01">5 août, 2023</time>
+                </div>
+              </div>
+              <!-------------------------------------->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End  -->
+
+  </main><!-- End #main -->
+
+  <!-- -----------------------======= Footer ======= ------------------------->
+  <footer id="footer" class="section-bg">
+    <div class="footer-top">
+      <div class="container">
+        <!-- Premier bloc de contenu -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-sm-6">
+                <!-- Logo -->
+                <div class="footer-info">
+                  <a href="index.html" class="logo me-auto">
+                    <img src="../assets/img/logo_transpa.png" alt="" class="img-fluid">
+                  </a>
+                  <!-- Description de l'entreprise -->
+                  <p><br />Nous vivons dans un monde où la technologie évolue rapidement, et rester à jour est devenu
+                    essentiel, que vous soyez un professionnel ou un passionné de l’IT. Pour les entreprises, être à la
+                    pointe des dernières avancées permet de gagner en compétitivité, d'améliorer la sécurité et de
+                    maximiser l'efficacité. En tant qu'individu, suivre les évolutions technologiques vous aide à
+                    renforcer vos compétences et à rester pertinent dans un marché du travail en constante
+                    transformation. Ne pas s'adapter peut entraîner des risques, notamment des cyberattaques ou une
+                    perte d'opportunités professionnelles dans le domaine IT.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 custom-padding-left">
+                <!-- Liens utiles -->
+                <div class="footer-links">
+                  <h4>Liens utiles</h4>
+                  <a href="#hero">Accueil</a><br>
+                  <a href="#services">Mes axes de surveillance</a><br>
+                  <a href="#about">À propos de nous</a><br>
+
+                </div>
+                <!-- Coordonnées de contact -->
+                <div class="footer-links">
+                  <h4>Contactez-nous</h4>
+                  <p>
+                    Carnoux-en-Provence, 13470 <br>
+                    France <br>
+                    Téléphone: <a href="tel:+33 4 88 39 22 43">+33 (0)4 88 39 22 43</a> <br>
+                    Email: <a href="mailto:contact@reboot-it.click">contact@reboot-it.click</a> <br>
+                  </p>
+                </div>
+
+                <!-- Liens des réseaux sociaux -->
+                <div class="social-links">
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="twitter"><i
+                      class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="facebook"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="instagram"><i
+                      class="bi bi-instagram"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100094897532896" class="linkedin"><i
+                      class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Deuxième bloc de contenu -->
+          <div class="col-lg-6">
+            <div class="form">
+              <!-- Formulaire de contact -->
+              <h4>Obtenez gratuitement des informations en ligne</h4>
+              <p>N'hésitez pas à me contacter pour toute question ou demande d'information sur les dernières tendances
+                technologiques. Je m'engage à vous répondre dans les 24 heures.</p>
+
+              <form name="contact" enctype="multipart/form-data" method="POST" data-netlify="true">
+                <p>
+                  <label>Votre nom: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Votre e-mail : <input type="email" name="email" /></label>
+                </p>
+
+                <p>
+                  <label>Objet : <input type="text" name="subject" /></label>
+                </p>
+
+                <p>
+                  <label>Message : <textarea name="message"></textarea></label>
+                </p>
+                <p style="margin-bottom: 0px;">
+                  <label>
+                    <span>Ajouter un fichier(s) :<br></span>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p style="margin-bottom: 0px;">
+                  <label>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input name="file" type="file" />
+                  </label>
+                </p>
+                <p>
+                  <button type="submit">Envoyer</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pied de page -->
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="copyright">
+          &copy; Copyright <strong>REBOOT-IT 2023</strong>. Tous droits réservés.
+        </div>
+        <div class="credits">
+          Conçu par <a href="https://www.linkedin.com/in/tahiana-j-20193a216/" target="_blank">Tahiana .J</a>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Fichiers JS des fournisseurs -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+  <!-- Fichier JS principal du modèle -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
